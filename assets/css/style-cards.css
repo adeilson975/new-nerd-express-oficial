@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html {
+    font-size:62.5%;
+    }
+.container-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color:#DCDCDC;
+    width:250px;
+    height:350px;
+    font-size:1.5rem;
+    margin:10px;
+    border-radius:15px;
+}
+.card-image {
+    height:150px;
+    margin-bottom: 15px;
+    background-size:cover ;
+    border-radius:15px 15px 0 0;
+}
+.img1 {
+    background-image:url("../img-cards/Highlander\ Reboot\ .avif") ;
+}
+.img2 {
+    background-image: url("../img-cards/Dragon\ Ball\ Super.avif");
+}
+.img3 {
+    background-image: url("../img-cards/Universo\ Ultimate.avif");
+}
+.img4 {
+    background-image:url("../img-cards/Resident\ Evil\ Requiem.avif") ;
+}
+.img5 {
+    background-image: url("../img-cards/Beatles-films-1140x760.avif");
+}
+.card .segmento {
+    background-color: #FF0000;
+    display: inline;
+    border-radius:0.5rem;
+    font-size:1.5rem;
+}
+.card h2 {
+    padding:5px;
+    margin-top: 1rem;
+    font-size:1.5rem;
+}
+.card p {
+    padding: 10px;
+}
+.card a {
+    background-color:#808080;
+    color: #fff;
+    padding:15px 20px;
+    display: block;
+    text-align: center;
+    margin:20px 50px;
+    border-radius:5px;
+}
+.card:hover {
+    background-color:rgb(62,62,62);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition:all 1s ease;
+
+}
