@@ -114,7 +114,7 @@ html, body {
   transform: none;
 }  
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:600px) {
   #menuToggle {
   display: none;
   }

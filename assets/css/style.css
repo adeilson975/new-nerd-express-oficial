@@ -180,18 +180,18 @@ footer {
 
 
 /* Media query para telas menores que 768px (tablets e celulares) */
-@media screen and (min-width:768px) {
+@media screen and (min-width:600px) {
   #menuToggle {
     display: none;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:600px) {
   .menu-navegacao {
     display: none ;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width:600px) {
   .lista-menu {
     flex-direction: column; /* Altera a direção para coluna */
     text-align: center; /* Centraliza os itens na coluna */
@@ -200,32 +200,32 @@ footer {
 
 
 /* Media query para telas menores que 768px (tablets e celulares) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width:600px) {
   .icone-redes {
     display: none; /*Não vai mostrar os icones de redes sociais para tela menoes*/
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width:600px) {
   .img-artigo {
     width:80%;
   }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:600px) {
   .icone-redes-rodape {
     flex-direction: column; /* Altera a direção para coluna */
     text-align: center; /* Centraliza os itens na coluna */
     border-radius: 10px;
   }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:600px) {
   .video-anexado iframe{
   height: auto;
   width:auto;
 }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:600px) {
   .artigo-conteudo-principal img {
   height:auto;
   width:100%;
