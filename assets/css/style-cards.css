@@ -12,9 +12,10 @@
     flex-wrap: wrap;
 }
 .card {
+    position: relative;
     background-color:#DCDCDC;
-    width:250px;
-    height:350px;
+    width:25rem;
+    height:40rem;
     font-size:1.5rem;
     margin:10px;
     border-radius:15px;
@@ -55,14 +56,18 @@
     padding: 10px;
 }
 .card a {
+    position: absolute;
+    bottom: 0;
+    margin-bottom:20px;
+    margin-left:70px;
     background-color:#808080;
     color: #fff;
     padding:15px 20px;
     display: block;
     text-align: center;
-    margin:20px 50px;
     border-radius:5px;
 }
+
 .card:hover {
     background-color:rgb(62,62,62);
     color: #fff;
