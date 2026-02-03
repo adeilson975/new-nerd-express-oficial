@@ -110,7 +110,8 @@ body {
 }
 .artigo-conteudo-principal h2 {
   font-size: 2rem;
-  margin-bottom:20px;
+  margin-bottom:40px;
+  margin-top:40px;
 }
 .artigo-conteudo-principal h3 {
   font-size:2rem;
@@ -123,8 +124,14 @@ body {
 .artigo-conteudo-principal p {
   margin-bottom:10px;
   font-size:2rem;
+} 
+
+
+.artigo-conteudo-principal img {
+  max-width:500px;
 }
-.video-anexado iframe{
+.video-anexado {
+  margin-top:40px;
   height:300px;
   width:500px;
 }
