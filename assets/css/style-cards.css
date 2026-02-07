@@ -27,6 +27,10 @@
     background-size:cover ;
     border-radius:15px 15px 0 0;
 }
+
+.img0 {
+    background-image:url("../img-cards/Harry\ Potter-foto1.avif") ;
+}
 .img1 {
     background-image:url("../img-cards/f1-movie.avif") ;
 }
