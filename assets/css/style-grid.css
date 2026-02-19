@@ -1,0 +1,86 @@
+:root {
+            --gap: 15px;
+            --radius: 12px;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            /* Criamos 3 colunas iguais */
+            grid-template-columns: 2fr 1fr; 
+            /* Criamos 3 linhas */
+            grid-template-rows: repeat(3, 150px);
+            gap: var(--gap);
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Item Principal (Ocupa 3 linhas de altura) */
+        .grid-item.main {
+            grid-row: span 3;
+        }
+
+        /* Estilização dos Cards */
+        .grid-item {
+            position: relative;
+            text-decoration: none;
+            overflow: hidden;
+            border-radius: var(--radius);
+            display: block;
+            background-color: #333;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        /* Efeito de Zoom ao passar o mouse */
+        .grid-item:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Área do Título */
+        .title-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 20px 15px;
+            font-family: sans-serif;
+        }
+
+        .main .title-overlay h2 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .small .title-overlay h3 {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Responsividade para Celulares */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            .grid-item.main {
+                grid-row: span 1;
+                height: 300px;
+            }
+            .grid-item {
+                height: 200px;
+            }
+        }
