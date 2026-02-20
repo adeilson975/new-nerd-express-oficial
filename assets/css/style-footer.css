@@ -19,6 +19,8 @@ footer .container {
 .row {
     display: flex;
     flex-wrap: wrap;
+    
+
 }
 ul {
     list-style: none;
@@ -81,13 +83,24 @@ ul {
     color: #24262b;
     background-color: #ffffff;
 }
-@media (max-width:767px) {
+@media (max-width:600px) {
+    .row {margin-left: 40px;
+
+    }
+}
+@media (max-width:600px) {
+    footer .container row {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:600px) {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
     }
 }
-@media (max-width:574px) {
+@media (max-width:600px) {
     .footer-col {
         width: 100%;
     
