@@ -1,0 +1,107 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      
+
+        /* Container Principal */
+        .container-colunas-cards {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            background: #fff;
+            padding: 20px;
+            border-radius:10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+        }
+
+        /* Título em Destaque */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color:#1C1C1C; /* Cor de destaque */
+            text-transform: uppercase;
+            border-left: 5px solid #1C1C1C;
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* Grid de Notícias */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+            gap: 20px;
+        }
+
+        /* Card de Notícia */
+        .news-card {
+            display: flex;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            text-decoration: none; /* Remove underline do link */
+            color: #333;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Imagem Responsiva */
+        .news-image {
+            width: 400px;
+            min-width: 150px;
+            height: auto;
+            object-fit: cover;
+            border-top-left-radius:15px;
+            border-bottom-left-radius:15px;
+        }
+
+        /* Conteúdo do Card */
+        .news-content {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .news-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #1d3557;
+        }
+
+        .news-date {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .news-content p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        /* Responsividade (Tablet e Mobile) */
+        @media (max-width: 992px) {
+            .news-grid {
+                grid-template-columns: 1fr; /* Muda para uma coluna em telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .news-card {
+                flex-direction: column; /* Imagem fica no topo em celulares pequenos */
+            }
+            .news-image {
+                width: 100%;
+                height: 180px;
+            }
+        }
