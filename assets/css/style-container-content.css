@@ -44,6 +44,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+
 .main-article p {
     margin:20px 0px;
 }
@@ -106,12 +107,16 @@ body {
 }
 
 /* Responsividade para Tablets e Celulares */
-@media (max-width: 900px) {
+
+
+
+
+@media (max-width:600px) {
     .container {
         flex-direction: column; /* Empilha main e aside */
     }
 
     .main-content, .sidebar {
-        width: 100%;
+        width:100%;
     }
 }
