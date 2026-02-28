@@ -50,7 +50,8 @@ main h1,h2,h3,p,img,iframe {
      
 }
 .main-article h2 {
-    margin-bottom: 40px;
+    margin-top:20px;
+    margin-bottom:30px;
 }
 .main-article p {
     margin:20px 0px;
