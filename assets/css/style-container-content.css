@@ -49,6 +49,19 @@ main h1,h2,h3,p,img,iframe {
    
      
 }
+.main-article {
+    display: flex;
+    flex-direction: column;
+}
+.capa-quadrinho {
+    width: 300px;
+    height: auto;
+}
+.imagem-cartaz {
+    width: 500px;
+    height: auto;
+    border:2px solid black;
+}
 .main-article h2 {
     margin-top:20px;
     margin-bottom:30px;

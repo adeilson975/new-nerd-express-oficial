@@ -1,0 +1,123 @@
+/* Estilização Global */
+        :root {
+            --primary-color:#007bff; 
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #ffffff;
+            --text-secondary: #b3b3b3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        /* Container Principal com as novas configurações */
+        .container-dica-semana {
+            max-width: 800px;
+            width: 100%;
+            margin: 20px auto; /* Centraliza o container na tela */
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+           
+            
+            /* Transferido do body: */
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+        }
+
+        /* Imagem de Topo (Completa) */
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            background-color: #000;
+        }
+
+        .content-dica-semana {
+            padding: 40px;
+        }
+
+        .meta-info {
+            font-size:2rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .content-dica-semana h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            color: var(--text-secondary);
+        }
+        .content-dica-semana h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            color: var(--text-secondary);
+        }
+        /* Nova Imagem 300x300 Responsiva */
+        .album-art {
+            width: 300px;
+            height: 300px;
+            max-width: 100%; /* Garante que não estoure em telas pequenas */
+            height: auto;    /* Mantém a proporção ao diminuir */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: block;
+            object-fit: cover;
+            border: 1px solid #fff;
+        }
+
+        .date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .content-dica-semana p {
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn-link:hover {
+            background-color:#007bff;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .album-art {
+                width: 100%; /* Em celulares, ela ocupa a largura disponível */
+            }
+        }
